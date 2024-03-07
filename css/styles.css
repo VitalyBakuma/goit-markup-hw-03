@@ -3,15 +3,47 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
 h2 {
   color: #2e2f42;
 }
-ul {
+ul,
+ol {
   list-style-type: none;
   font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
+  height: 72px;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -22,6 +54,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 span {
@@ -30,8 +63,12 @@ span {
 
 .nav-list-text {
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 .nav-list {
+  display: flex;
+  gap: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -57,12 +94,18 @@ span {
   background-color: #404bbf;
 }
 
+.adress-list {
+  display: flex;
+  gap: 40px;
+}
+
 .address {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-left: auto;
 }
 
 .nav-addres {
@@ -74,6 +117,11 @@ span {
 
 .hero {
   background-color: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+
 }
 
 .hero-title {
@@ -83,9 +131,13 @@ span {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .btn {
+  display: block;
+  margin: 0 auto;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -94,6 +146,10 @@ span {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 
 .feature {
