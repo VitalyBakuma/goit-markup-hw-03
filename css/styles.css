@@ -4,6 +4,12 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 img {
   display: block;
   max-width: 100%;
@@ -31,7 +37,7 @@ ol {
 }
 
 .container {
-  width: 1158px;
+  width: 1128px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -121,7 +127,6 @@ span {
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
-
 }
 
 .hero-title {
@@ -155,12 +160,21 @@ span {
 .feature {
 }
 
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((1128px - 3 * 24) / 4);
+}
 .feature-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .feature-text {
@@ -173,8 +187,19 @@ span {
 
 .section-team {
   background-color: #f4f4fd;
+  
 }
 
+.team{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -182,10 +207,12 @@ span {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .team-image {
   background-color: #fff;
+  
 }
 
 .team-subtitle {
