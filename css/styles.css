@@ -146,6 +146,7 @@ span {
   display: block;
   margin: 0 auto;
   background-color: #4d5ae5;
+  min-width: 169px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -160,6 +161,20 @@ span {
 }
 
 .feature {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature-list {
@@ -169,9 +184,10 @@ span {
 }
 
 .feature-item {
-  width: calc((100% - 3 * 24) / 4);
+  
 }
 .feature-title {
+  width: calc((100% - 3 * 24) / 4);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
