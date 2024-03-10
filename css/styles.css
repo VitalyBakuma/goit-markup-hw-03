@@ -7,6 +7,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -32,12 +35,10 @@ ol {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
-  height: 72px;
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -123,8 +124,6 @@ span {
 
 .hero {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -163,10 +162,11 @@ span {
 .feature-list {
   display: flex;
   gap: 24px;
+  padding: 120px 0;
 }
 
 .feature-item {
-  width: calc((1128px - 3 * 24) / 4);
+  width: calc((100% - 3 * 24) / 4);
 }
 .feature-title {
   font-weight: 500;
@@ -187,19 +187,13 @@ span {
 
 .section-team {
   background-color: #f4f4fd;
-  
 }
 
-.team{
+.team {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.team-list {
-  display: flex;
-  gap: 24px;
-
-}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -207,12 +201,17 @@ span {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-top: 120px;
   margin-bottom: 72px;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
 .team-image {
   background-color: #fff;
-  
 }
 
 .team-subtitle {
@@ -233,7 +232,6 @@ span {
 }
 
 .section-portfolio {
-  background-color: #f4f4fd;
 }
 
 .title {
@@ -241,9 +239,14 @@ span {
 }
 .project-list {
   color: #2e2f42;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 120px;
 }
 
 .project-list-img {
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .project-list-subtitle {
@@ -252,6 +255,7 @@ span {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
 }
 
 .project-list-text {
@@ -260,10 +264,13 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
+  margin-top: 8px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -284,4 +291,6 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
