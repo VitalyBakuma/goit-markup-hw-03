@@ -3,6 +3,9 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+..section {
+  padding: 120px 0;
+}
 
 h1,
 h2,
@@ -255,7 +258,6 @@ span {
 }
 
 .project-list-img {
-  border: 0 1px 1px 1px #e7e9fc;
 }
 
 .project-list-subtitle {
