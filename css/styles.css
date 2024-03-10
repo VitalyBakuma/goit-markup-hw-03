@@ -190,7 +190,8 @@ span {
 }
 
 .team {
-padding: 32px 16px;
+  display: block;
+  padding: 32px 16px;
 }
 
 .title {
@@ -237,25 +238,24 @@ padding: 32px 16px;
   color: #2e2f42;
 }
 .images-subtitle {
+  display: block;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 .project-list {
   color: #2e2f42;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-content: space-between;
+  row-gap: 48px;
+  column-gap: 24px;
   padding-bottom: 120px;
 }
 
 .project-list-img {
   border: 0 1px 1px 1px #e7e9fc;
-  width: 360px;
-  height: 420px;
 }
 
 .project-list-subtitle {
