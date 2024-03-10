@@ -181,10 +181,11 @@ span {
   display: flex;
   gap: 24px;
   padding: 120px 0;
-  width: calc((100% - 3 * 24) / 4);
+  
 }
 
 .feature-item {
+  width:calc((100% - 72px) / 4);
   
 }
 .feature-title {
